@@ -1,27 +1,51 @@
-import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/Hero";
-import { StatsBar } from "@/components/StatsBar";
-import { Carousel } from "@/components/Carousel";
-import { ScrollDemo } from "@/components/ScrollDemo";
-import { Features } from "@/components/Features";
-import { Testimonials } from "@/components/Testimonials";
-import { Faq } from "@/components/Faq";
-import { CtaFooter } from "@/components/CtaFooter";
+import { PageFrame } from "@/components/ui/PageFrame";
+import { Reveal } from "@/components/ui/Reveal";
+import { Navbar } from "@/components/layout/Navbar";
+import { Hero } from "@/components/sections/Hero";
+import { Intro } from "@/components/sections/Intro";
+import { CardThemes } from "@/components/sections/CardThemes";
+import { PhoneDemo } from "@/components/sections/PhoneDemo";
+import { WhyChoose } from "@/components/sections/WhyChoose";
+import { Gallery } from "@/components/sections/Gallery";
+import { Stats } from "@/components/sections/Stats";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { FAQ } from "@/components/sections/FAQ";
+import { CTAFooter } from "@/components/sections/CTAFooter";
 
-export default function Home() {
+export default function Page() {
   return (
-    <>
+    <PageFrame>
       <Navbar />
       <main>
         <Hero />
-        <StatsBar />
-        <Carousel />
-        <ScrollDemo />
-        <Features />
-        <Testimonials />
-        <Faq />
-        <CtaFooter />
+        <Reveal>
+          <Stats />
+        </Reveal>
+        <Reveal>
+          <Intro />
+        </Reveal>
+        <Reveal>
+          <CardThemes />
+        </Reveal>
+        <Reveal>
+          <PhoneDemo />
+        </Reveal>
+        <Reveal>
+          <WhyChoose />
+        </Reveal>
+        <Reveal>
+          <Gallery />
+        </Reveal>
+        <Reveal>
+          <Testimonials />
+        </Reveal>
+        <Reveal>
+          <FAQ />
+        </Reveal>
+        <Reveal>
+          <CTAFooter />
+        </Reveal>
       </main>
-    </>
+    </PageFrame>
   );
 }

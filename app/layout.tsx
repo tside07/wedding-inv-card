@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { beVietnamPro, jetbrainsMono } from "./fonts";
+import { cormorant, beVietnam } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,10 +19,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="vi"
-      className={`${beVietnamPro.variable} ${jetbrainsMono.variable}`}
-    >
+    <html lang="vi" className={`${cormorant.variable} ${beVietnam.variable}`}>
       <body>{children}</body>
     </html>
   );

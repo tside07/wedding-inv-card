@@ -2,6 +2,7 @@
 /.next
 /out
 /build
+*.tsbuildinfo
 next-env.d.ts
 *.log
 .DS_Store
